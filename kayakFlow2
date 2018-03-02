@@ -1,0 +1,431 @@
+target: http://kayak.com:80
+
+Request:
+
+GET / HTTP/1.1
+Host: kayak.com
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: close
+Upgrade-Insecure-Requests: 1
+
+Response:
+
+HTTP/1.1 301 MOVED PERMANENTLY
+Location: https://www.kayak.com/
+Connection: close
+
+RESULTED IN REDIRECTION TO PORT 443
+
+######################################################
+target: http://kayak.com:443
+
+Request:
+
+GET / HTTP/1.1
+Host: kayak.com
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: close
+Upgrade-Insecure-Requests: 1
+
+Response:
+
+HTTP/1.1 200 OK
+Server: KAYAK/1.0
+content-security-policy: upgrade-insecure-requests
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+x-frame-options: SAMEORIGIN
+content-security-policy-report-only: default-src https:; connect-src https:; font-src https: data:; frame-src https:; img-src https: data:; media-src https:; object-src https: data: blob:; script-src 'unsafe-inline' 'unsafe-eval' https:; style-src 'unsafe-inline' https:; worker-src blob:; report-uri /s/run/cspreport
+cache-control: no-store
+Content-Type: text/html;charset=UTF-8
+Content-Language: en-US
+Set-Cookie: Apache=SNpQeQ-AAABYJQ5Mwo-8b-J72K6w; Expires=Mon, 21-Sep-2020 19:07:44 GMT; Path=/; HttpOnly
+Set-Cookie: kykprf=294; Path=/; HttpOnly
+Set-Cookie: kayak=bQD92qu5fkwNS8V_Bg8$; Expires=Fri, 25-Dec-2020 19:07:44 GMT; Path=/; HttpOnly
+Set-Cookie: cluster=4; Expires=Tue, 26-Dec-2017 19:52:44 GMT; Path=/; HttpOnly
+Set-Cookie: p1.med.sid=H-4Jb6HchaYVQD$OxI1n6Ah-hpWPCEPmac1t8q1ptA5YE2OhiWlYe9ASNELI9qF8x; Path=/; HttpOnly
+Set-Cookie: p1.med.token=WC6brADvVTBZZPriL$hA0V; Expires=Sun, 24-Jun-2018 19:07:44 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: NSC_q4-tqbslmf=ffffffff094f2a9045525d5f4f58455e445a4a422a59;expires=Tue, 26-Dec-2017 19:27:44 GMT;path=/;httponly
+Via: 1.1 varnish
+Fastly-Debug-Digest: b5b288990e27614dbd0cafc31dfd23c0021241a1b6dc94766f479bdd28471ac9
+Accept-Ranges: bytes
+Date: Tue, 26 Dec 2017 19:07:44 GMT
+Via: 1.1 varnish
+Age: 0
+Connection: close
+X-Served-By: cache-jfk8127-JFK, cache-iad2130-IAD
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1514315265.777083,VS0,VE140
+Vary: Accept-Encoding
+Content-Length: 337618
+
+##########################################################
+Request:
+
+POST /s/horizon/common/layout/NavMenu HTTP/1.1
+Host: www.kayak.com
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Referer: https://www.kayak.com/
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-CSRF: v1WnEKxQBbVyLIcsGSUutkYYto3J2ZW2KR5b5lhyr_c-hpumC4oNpaOjz15GO_q9a5FdZPonpC2kF4CBYjEPh14
+X-RequestId: flights#frontdoor#fhEoSu
+X-Requested-With: XMLHttpRequest
+Content-Length: 243
+Cookie: Apache=SNpQeQ-AAABYJT9eXY-8b-GdwXGQ; kykprf=250; kayak=QEByJLrAVOOfJ2928pIS; cluster=4; p1.med.sid=H-4_XxXdbshGS3OvTVYuMHV-7TlaRxXeQC9VazD_VUvoK7gHtBVJuRoul7qObbygb; p1.med.token=SyEYWuPyozoern$sk3XLAc; NSC_q4-tqbslmf=ffffffff094f2a1645525d5f4f58455e445a4a422a59
+Connection: close
+
+pageType=FD&active=false&phoenixRising=false&scriptsMetadata=8DE1B5gIg2z1Qw%261EQB1F3!KwD%2Fk1E9C3PcwdGcq%2FCmDUBpj*g20I13QGJM6U28B36i9E7%26B25H1C&stylesMetadata=10M1g1E6B21E4g4DY7D1SQ19CBn%2C%2B17B1EQR1K1rU%26DdQo1qW34Q23g67g14C2g52CYC1%3D%3D
+
+****!!! scriptsMetadata used again in next request !!!***
+Response:
+
+HTTP/1.1 200 OK
+Server: KAYAK/1.0
+content-security-policy: upgrade-insecure-requests
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+content-security-policy-report-only: default-src https:; connect-src https:; font-src https: data:; frame-src https:; img-src https: data:; media-src https:; object-src https: data: blob:; script-src 'unsafe-inline' 'unsafe-eval' https:; style-src 'unsafe-inline' https:; worker-src blob:; report-uri /s/run/cspreport
+p3p: CP="ALL"
+cache-control: no-store
+Content-Type: application/json;charset=UTF-8
+Content-Language: en-US
+Set-Cookie: cluster=4; Expires=Tue, 26-Dec-2017 23:29:02 GMT; Path=/; HttpOnly
+Set-Cookie: NSC_q4-tqbslmf=ffffffff094f2a1645525d5f4f58455e445a4a422a59;expires=Tue, 26-Dec-2017 23:04:02 GMT;path=/;httponly
+Accept-Ranges: bytes
+Via: 1.1 varnish
+Fastly-Debug-Digest: 579c142e0231acbdbb1fe20cfb5dfd0d76ea07bd0e2d4a5fc34e1b2e774e5f2a
+Accept-Ranges: bytes
+Date: Tue, 26 Dec 2017 22:44:02 GMT
+Via: 1.1 varnish
+Connection: close
+X-Served-By: cache-jfk8120-JFK, cache-iad2620-IAD
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1514328242.476408,VS0,VE36
+Vary: Accept-Encoding
+Content-Length: 3663
+
+
+{
+    "version" : "R395d",
+    "content" : "<div id=\"c_jId\" class=\"Common-Layout-NavMenu Common-Layout-NavMenuWhite\">\n<div class=\"keel-grid utilsGrid\">\n<div class=\"col-visible-s col-account-menu account-button-vertical dialogTrigger v-c-p\">\n<div id=\"c_jId-profileIcon\" class=\"profile-icon\">\n<div class=\"icon-wrapper displayLink\">\n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><use xlink:href=\"#common-layout-profile\"/></svg> <div id=\"c_jId-notifications-counter\" class=\"total-notifications notification-count hidden\">\n<span class=\"counter-text\">\n0\n</span>\n</div>\n</div>\n</div>\n<a id=\"c_jId-dropdown\" href=\"javascript:void(0)\"\naria-controls=\"c_jId-dropdown_content\"\naria-owns=\"c_jId-dropdown_content\"\nrole=\"button\"\naria-pressed=\"false\" aria-label=\"My Account\" aria-haspopup=\"true\"\naria-expanded=\"false\"\ndata-alignment=\"right\"\ndata-expandto=\"\"\nclass=\"Common-Widgets-Dropdown-DropdownDialog navAccountMore inspectlet-sensitive displayLink size-m hasValue\"\n>\n<div class=\"label\"\n>\nMy Account </div>\n<div class=\"placeholder\">\n</div>\n</a>\n</div>\n</div>\n</div>\n",
+    "bufferedScripts" : [
+        "new R9.common.widgets.dropdown.DropdownDialog(\"c_jId-dropdown\", {\"theme\":\"DEFAULT\",\"phoenixRising\":false,\"loadWithAjaxOnInit\":false,\"ajaxUrl\":\"\",\"ajaxData\":{},\"placeholder\":\"\",\"value\":\"My Account\",\"isPopover\":false,\"showIcon\":false,\"autoOpen\":false,\"alignment\":\"right\",\"direction\":\"down\",\"container\":null,\"triggerClass\":\"dialogTrigger\",\"removeZIndex\":true,\"flippable\":true,\"topOffset\":0,\"leftOffset\":0,\"matchWidth\":false,\"isFixedWidth\":false,\"forceTriggerWidth\":false,\"expandTo\":null,\"subValue\":\"\",\"subPlaceholder\":\"\",\"subValueAfterIcon\":\"\",\"animateClose\":false,\"hasSubValue\":false,\"hasSubValueAfterIcon\":false,\"hasSubPlaceholder\":false,\"useCover\":false});new R9.common.layout.NavMenuWhite(\"c_jId\", {\"theme\":\"DEFAULT\",\"signInOutLink\":\"/k/ident/signout?redir=%2Fs%2Fhorizon%2Fcommon%2Flayout%2FNavMenu\",\"showEmailLogin\":false,\"includeContent\":true,\"isLoggedInUser\":false,\"isAccountWatchListEnabled\":false,\"showUpcomingTripNotification\":false,\"upcomingTripV2Enabled\":false,\"triggerClass\":\"dialogTrigger\",\"messageDuration\":5000,\"isLogoutFullUrl\":true,\"phoenixRising\":false,\"activeVertical\":null,\"tripsCount\":0,\"priceAlertsCount\":0,\"isAjaxLoad\":false,\"isAjaxInitEnabled\":true});"
+    ],
+    "bufferedHTML" : [
+            ],
+    "bufferedSVGs": [
+                    "<symbol id=\"common-layout-profile\"  xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><circle class=\"colorable svg-white-default\" stroke=\"currentColor\" fill=\"none\" cx=\"12\" cy=\"10\" r=\"3.5\"/><path class=\"colorable svg-white-default\" stroke=\"currentColor\" fill=\"none\" d=\"M12,14c-4,0-7.21,2.67-7.47,6.05a11,11,0,0,0,14.95,0C19.21,16.67,16,14,12,14Z\"/><path class=\"colorable svg-white-default\" stroke=\"currentColor\" fill=\"none\" d=\"M23,12A11,11,0,1,0,4.53,20.05C4.79,16.67,8,14,12,14s7.21,2.67,7.47,6.05A11,11,0,0,0,23,12Z\"/></symbol>\n"            ],
+    "clientTemplates": [
+            ],
+    "react": null,
+    
+"styles" : [
+    "https://a1.r9cdn.net/res/css/horizon/combined-1.css?v=407f89e73af237fb23f6b938ffedc07cee018dd0"]
+,
+"stylesMetadata" : "107E"    ,
+    
+"scripts" : [
+    "https://a1.r9cdn.net/res/js/horizon/combined-3.js?v=48a036fffe9acdae9c8a4511c758e723379b23c0"]
+,
+"scriptsMetadata" : "55C62Q28B"        ,
+    "globals" : {"formtoken":"v1WnEKxQBbVyLIcsGSUutkYYto3J2ZW2KR5b5lhyr_c-hpumC4oNpaOjz15GO_q9a5FdZPonpC2kF4CBYjEPh14"}    }
+
+###########################################################
+Request:
+GET /s/horizon/common/privacy/AjaxHeaderCookiesMessage?scriptsMetadata=8DE1B5gIg2z1Qw%261EQB1F3!KwD%2Fk1E9C3PcwdGcq%2FCmDUBpj*g20I13QGJM6U28B36i9E7%26B25H1C&stylesMetadata=10M1g1E6B21E4g4DY7D1SQ19CBn%2C%2B17B1EQR1K1rU%26DdQo1qW34Q23g67g14C2g52CYC1%3D%3D HTTP/1.1
+Host: www.kayak.com
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Referer: https://www.kayak.com/
+X-CSRF: v1WnEKxQBbVyLIcsGSUutkYYto3J2ZW2KR5b5lhyr_c-hpumC4oNpaOjz15GO_q9a5FdZPonpC2kF4CBYjEPh14
+X-RequestId: flights#frontdoor#fhEoSu
+X-Requested-With: XMLHttpRequest
+Cookie: Apache=SNpQeQ-AAABYJT9eXY-8b-GdwXGQ; kykprf=250; kayak=QEByJLrAVOOfJ2928pIS; cluster=4; p1.med.sid=H-4_XxXdbshGS3OvTVYuMHV-7TlaRxXeQC9VazD_VUvoK7gHtBVJuRoul7qObbygb; p1.med.token=SyEYWuPyozoern$sk3XLAc; NSC_q4-tqbslmf=ffffffff094f2a1645525d5f4f58455e445a4a422a59
+Connection: close
+
+Response:
+HTTP/1.1 200 OK
+Server: KAYAK/1.0
+content-security-policy: upgrade-insecure-requests
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+content-security-policy-report-only: default-src https:; connect-src https:; font-src https: data:; frame-src https:; img-src https: data:; media-src https:; object-src https: data: blob:; script-src 'unsafe-inline' 'unsafe-eval' https:; style-src 'unsafe-inline' https:; worker-src blob:; report-uri /s/run/cspreport
+p3p: CP="ALL"
+cache-control: no-store
+Content-Type: application/json;charset=UTF-8
+Content-Language: en-US
+Set-Cookie: cluster=4; Expires=Tue, 26-Dec-2017 23:36:58 GMT; Path=/; HttpOnly
+Set-Cookie: NSC_q4-tqbslmf=ffffffff094f2a1645525d5f4f58455e445a4a422a59;expires=Tue, 26-Dec-2017 23:11:58 GMT;path=/;httponly
+Via: 1.1 varnish
+Fastly-Debug-Digest: a2f193ec950c3d94084d74480dcfcf7bea6b578625c62c4e52aba2877ee7e908
+Accept-Ranges: bytes
+Date: Tue, 26 Dec 2017 22:51:58 GMT
+Via: 1.1 varnish
+Age: 0
+Connection: close
+X-Served-By: cache-jfk8130-JFK, cache-iad2138-IAD
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1514328719.553489,VS0,VE25
+Vary: Accept-Encoding
+Content-Length: 826
+
+
+{
+    "version" : "R395d",
+    "content" : "<div id=\"ajaxCookiesMessage\">\n</div>\n",
+    "bufferedScripts" : [
+        "new R9.common.privacy.AjaxHeaderCookiesMessage(\"a1WE\", {\nvisible: false,\nisBetterUX: false,\nisRepeat: false\n});"
+    ],
+    "bufferedHTML" : [
+            ],
+    "bufferedSVGs": [
+            ],
+    "clientTemplates": [
+            ],
+    "react": null,
+    
+"styles" : [
+    "https://a1.r9cdn.net/res/css/horizon/combined-1.css?v=56c90b61b0751ec2255878856a32729d84efb9d9"]
+,
+"stylesMetadata" : "92B1=="    ,
+    
+"scripts" : [
+    "https://a1.r9cdn.net/res/js/horizon/combined-3.js?v=cca9d50c4cd7e3082d3ab6952c1f64e94979ff4f"]
+,
+"scriptsMetadata" : "43B74Q28B"        ,
+    "globals" : {"formtoken":"v1WnEKxQBbVyLIcsGSUutkYYto3J2ZW2KR5b5lhyr_c-hpumC4oNpaOjz15GO_q9a5FdZPonpC2kF4CBYjEPh14"}    }
+
+
+###########################################################
+Request:
+
+GET /s/horizon/common/layout/AjaxFooterLinks?id=DuH7&isSeo=false&scriptsMetadata=8DE1B5gIg2z1Qw%261EQB1F3!KwD%2Fk1E9C3PcwdGcq%2FCmDUBpj*g20I13QGJM6U28B36i9E7%26B25H1C&stylesMetadata=10M1g1E6B21E4g4DY7D1SQ19CBn%2C%2B17B1EQR1K1rU%26DdQo1qW34Q23g67g14C2g52CYC1%3D%3D HTTP/1.1
+Host: www.kayak.com
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Referer: https://www.kayak.com/
+X-CSRF: v1WnEKxQBbVyLIcsGSUutkYYto3J2ZW2KR5b5lhyr_c-hpumC4oNpaOjz15GO_q9a5FdZPonpC2kF4CBYjEPh14
+X-RequestId: flights#frontdoor#fhEoSu
+X-Requested-With: XMLHttpRequest
+Cookie: Apache=SNpQeQ-AAABYJT9eXY-8b-GdwXGQ; kykprf=250; kayak=QEByJLrAVOOfJ2928pIS; cluster=4; p1.med.sid=H-4_XxXdbshGS3OvTVYuMHV-7TlaRxXeQC9VazD_VUvoK7gHtBVJuRoul7qObbygb; p1.med.token=SyEYWuPyozoern$sk3XLAc; NSC_q4-tqbslmf=ffffffff094f2a1645525d5f4f58455e445a4a422a59
+Connection: close
+
+Response:
+
+HTTP/1.1 200 OK
+Server: KAYAK/1.0
+content-security-policy: upgrade-insecure-requests
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+content-security-policy-report-only: default-src https:; connect-src https:; font-src https: data:; frame-src https:; img-src https: data:; media-src https:; object-src https: data: blob:; script-src 'unsafe-inline' 'unsafe-eval' https:; style-src 'unsafe-inline' https:; worker-src blob:; report-uri /s/run/cspreport
+p3p: CP="ALL"
+cache-control: no-store
+Content-Type: application/json;charset=UTF-8
+Content-Language: en-US
+Set-Cookie: cluster=4; Expires=Tue, 26-Dec-2017 23:43:28 GMT; Path=/; HttpOnly
+Set-Cookie: NSC_q4-tqbslmf=ffffffff094f2a1645525d5f4f58455e445a4a422a59;expires=Tue, 26-Dec-2017 23:18:28 GMT;path=/;httponly
+Via: 1.1 varnish
+Fastly-Debug-Digest: fab57366ae79f572b74ad214cb2cc071dc3ca5358c9e3f22e597be26df130de0
+Accept-Ranges: bytes
+Date: Tue, 26 Dec 2017 22:58:28 GMT
+Via: 1.1 varnish
+Age: 0
+Connection: close
+X-Served-By: cache-jfk8121-JFK, cache-iad2122-IAD
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1514329108.120823,VS0,VE32
+Vary: Accept-Encoding
+Content-Length: 2759
+
+
+{
+    "version" : "R395d",
+    "content" : "<div id=\"DuH7-corporate-links\">\n<div class=\"keel-grid\">\n<div class=\"col-1-3\">\n<div id=\"JyJi\" class=\"Common-Layout-MenuWithTitle\">\n<div class=\"title\">Company</div>\n<ul>\n<li><a href=\"/about\" target=\"_self\" >About</a></li>\n<li><a href=\"/careers\" target=\"_self\" >Careers</a></li>\n<li><a href=\"/mobile\" target=\"_self\" >Mobile</a></li>\n<li><a href=\"/news\" target=\"_self\" >Blog</a></li>\n</ul>\n</div>\n</div>\n<div class=\"col-1-3\">\n<div id=\"GhrZ\" class=\"Common-Layout-MenuWithTitle\">\n<div class=\"title\">Contact</div>\n<ul>\n<li><a href=\"/help\" target=\"_self\" >Help/FAQ</a></li>\n<li><a href=\"/press-contact\" target=\"_self\" >Press</a></li>\n<li><a href=\"/partners-contact\" target=\"_self\" >Partners</a></li>\n<li><a href=\"/hotelowner\" target=\"_self\" >Hotel Owners</a></li>\n</ul>\n</div>\n</div>\n<div class=\"col-1-3\">\n<div id=\"SX0j\" class=\"Common-Layout-MenuWithTitle\">\n<div class=\"title\">More</div>\n<ul>\n<li><a href=\"/airline-fees\" target=\"_self\" >Airline Fees</a></li>\n<li><a href=\"/airlines\" target=\"_self\" >Airlines</a></li>\n<li><a href=\"/help/lowfares\" target=\"_self\" >Low Fare Tips</a></li>\n<li><a href=\"/direct\" target=\"_self\" >Direct Routes</a></li>\n</ul>\n</div>\n</div>\n</div>\n</div>\n<div id=\"DuH7-footerMenu\" class=\"keel-grid Common-Layout-FooterMenu\">\n<div class=\"col center\">\n<a href=\"/privacy\">Privacy</a>\n<a href=\"/terms-of-use\">Terms & Conditions</a>\n<a href=\"/privacy#trackingtools\">Ad Choices</a>\n<span>&copy;2017 KAYAK</span>\n</div>\n</div>\n<div id=\"DuH7-social\">\n<div class=\"col\">\n<div class=\"keel-container\">\n<div class=\"keel-grid\">\n<div class=\"col center social\" >\n<a aria-label=\"facebook link with icon\" class=\"facebook\" href=\"https://www.facebook.com/kayak/\"></a>\n<a aria-label=\"twitter link with icon\" class=\"twitter\" href=\"https://twitter.com/KAYAK\"></a>\n<a aria-label=\"youtube link with icon\" class=\"youtube\" href=\"https://www.youtube.com/channel/UCs36_o9B5NadGYfiHwT-ekQ\"></a>\n<a aria-label=\"instagram link with icon\" class=\"instagram\" href=\"https://www.instagram.com/kayak/\"></a>\n</div>\n</div>\n</div>\n</div>\n</div>\n",
+    "bufferedScripts" : [
+        
+    ],
+    "bufferedHTML" : [
+            ],
+    "bufferedSVGs": [
+            ],
+    "clientTemplates": [
+            ],
+    "react": null,
+    
+"styles" : [
+    "https://a1.r9cdn.net/res/css/horizon/combined-1.css?v=b7ec336bc7ebc427e171935bf00ff5a7cdaad41e"]
+,
+"stylesMetadata" : "86g="    ,
+    
+"scripts" : [
+]
+,
+"scriptsMetadata" : ""        ,
+    "globals" : {"formtoken":"v1WnEKxQBbVyLIcsGSUutkYYto3J2ZW2KR5b5lhyr_c-hpumC4oNpaOjz15GO_q9a5FdZPonpC2kF4CBYjEPh14"}    }
+
+############################################################
+**for the country and currency picker at the bottom of the screen**
+Request:
+
+POST /g/horizon/common/layout/CountryAndCurrencyPickers HTTP/1.1
+Host: www.kayak.com
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Referer: https://www.kayak.com/
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-CSRF: v1WnEKxQBbVyLIcsGSUutkYYto3J2ZW2KR5b5lhyr_c-hpumC4oNpaOjz15GO_q9a5FdZPonpC2kF4CBYjEPh14
+X-RequestId: flights#frontdoor#fhEoSu
+X-Requested-With: XMLHttpRequest
+Content-Length: 1107
+Cookie: Apache=SNpQeQ-AAABYJT9eXY-8b-GdwXGQ; kykprf=250; kayak=QEByJLrAVOOfJ2928pIS; cluster=4; p1.med.sid=H-4_XxXdbshGS3OvTVYuMHV-7TlaRxXeQC9VazD_VUvoK7gHtBVJuRoul7qObbygb; p1.med.token=SyEYWuPyozoern$sk3XLAc; NSC_q4-tqbslmf=ffffffff094f2a1645525d5f4f58455e445a4a422a59
+Connection: close
+
+fixedUrlsJSON=%7B%22NO%22%3A%22%2F%22%2C%22DE%22%3A%22%2F%22%2C%22TW%22%3A%22%2F%22%2C%22RU%22%3A%22%2F%22%2C%22HK%22%3A%22%2F%22%2C%22FI%22%3A%22%2F%22%2C%22PT%22%3A%22%2F%22%2C%22JP%22%3A%22%2F%22%2C%22DK%22%3A%22%2F%22%2C%22NZ%22%3A%22%2F%22%2C%22FR%22%3A%22%2F%22%2C%22BR%22%3A%22%2F%22%2C%22SE%22%3A%22%2F%22%2C%22SG%22%3A%22%2F%22%2C%22ID%22%3A%22%2F%22%2C%22GB%22%3A%22%2F%22%2C%22IE%22%3A%22%2F%22%2C%22US%22%3A%22%2F%22%2C%22CA%22%3A%22%2F%22%2C%22AE%22%3A%22%2F%22%2C%22IN%22%3A%22%2F%22%2C%22CH%22%3A%22%2F%22%2C%22KR%22%3A%22%2F%22%2C%22CL%22%3A%22%2F%22%2C%22MX%22%3A%22%2F%22%2C%22IT%22%3A%22%2F%22%2C%22GR%22%3A%22%2F%22%2C%22CN%22%3A%22%2F%22%2C%22MY%22%3A%22%2F%22%2C%22CO%22%3A%22%2F%22%2C%22ES%22%3A%22%2F%22%2C%22AR%22%3A%22%2F%22%2C%22TH%22%3A%22%2F%22%2C%22AU%22%3A%22%2F%22%2C%22PE%22%3A%22%2F%22%2C%22PL%22%3A%22%2F%22%2C%22TR%22%3A%22%2F%22%2C%22NL%22%3A%22%2F%22%7D&verticalSymbol=F&scriptsMetadata=8DE1B5gIg2z1Qw%261EQB1F3!KwD%2Fk1E9C3PcwdGcq%2FCmDUBpj*g20I13QGJM6U28B36i9E7%26B25H1C&stylesMetadata=10M1g1E6B21E4g4DY7D1SQ19CBn%2C%2B17B1EQR1K1rU%26DdQo1qW34Q23g67g14C2g52CYC1%3D%3D
+
+Response:
+
+HTTP/1.1 200 OK
+Server: KAYAK/1.0
+content-security-policy: upgrade-insecure-requests
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+content-security-policy-report-only: default-src https:; connect-src https:; font-src https: data:; frame-src https:; img-src https: data:; media-src https:; object-src https: data: blob:; script-src 'unsafe-inline' 'unsafe-eval' https:; style-src 'unsafe-inline' https:; worker-src blob:; report-uri /s/run/cspreport
+cache-control: no-store
+Content-Type: application/json;charset=UTF-8
+Content-Language: en-US
+Set-Cookie: cluster=4; Expires=Tue, 26-Dec-2017 23:47:22 GMT; Path=/; HttpOnly
+Set-Cookie: NSC_q4-tqbslmf=ffffffff094f2a1645525d5f4f58455e445a4a422a59;expires=Tue, 26-Dec-2017 23:22:22 GMT;path=/;httponly
+Accept-Ranges: bytes
+Via: 1.1 varnish
+Fastly-Debug-Digest: 8e62bd18a5ef4e37f85bcd6ba4787613b607c0dbb7ed4c703c5266de8c04e82c
+Accept-Ranges: bytes
+Date: Tue, 26 Dec 2017 23:02:22 GMT
+Via: 1.1 varnish
+Connection: close
+X-Served-By: cache-jfk8134-JFK, cache-iad2632-IAD
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1514329343.803587,VS0,VE30
+Vary: Accept-Encoding
+Content-Length: 32889
+
+
+{
+    "version" : "R395d",
+    "content" : "<div id=\"unkt\" class=\"Common-Layout-CountryAndCurrencyPickers\">\n<a id=\"unkt-countryPicker-dropdown\" href=\"javascript:void(0)\"\naria-controls=\"unkt-countryPicker-dropdown_content\"\naria-owns=\"unkt-countryPicker-dropdown_content\"\nrole=\"button\"\naria-pressed=\"false\" aria-label=\"Select your country and language. Current country: United States\" aria-haspopup=\"true\"\naria-expanded=\"false\"\ndata-alignment=\"right\"\ndata-expandto=\"\"\nclass=\"Common-Widgets-Dropdown-DropdownDialog theme-dark Common-Layout-CountryPicker-Trigger DropDown select size-m\"\n>\n<div class=\"label\"\n>\n</div>\n<div class=\"placeholder\">\n<span class='flag us'>&nbsp;</span>United States </div>\n<div class=\"icon\">\n<svg class=\"\" viewBox=\"0 0 8 5\" xmlns=\"http://www.w3.org/2000/svg\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"1.35\"><path d=\"M7 1.053L4.027 4 1 1\" stroke=\"currentColor\" fill=\"none\"/></svg>\n</div>\n</a>\n<div id=\"unkt-countryPicker-dropdown_content\"\nclass=\"Common-Widgets-Dropdown-DropdownDialog-Content Common-Layout-CountryPicker-Content responsive R9-Overlay animate-bottom-right\"\naria-expanded=\"false\"\ndata-dropdown-owner=\"\"\nrole=\"dialog\">\n<div id=\"unkt-countryPicker\">\n<div class=\"keel-grid country-grid\">\n<div class=\"col col-1-3-m\">\n<a href=\"https://www.kayak.com.ar/\"\ndata-href=\"https://www.kayak.com.ar/in?cc=ar&a=kayak&p=&url=/\"\ndata-locale=\"es-AR\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag ar\"></span>Argentina </a>\n<a href=\"https://www.kayak.com.au/\"\ndata-href=\"https://www.kayak.com.au/in?cc=au&a=kayak&p=&url=/\"\ndata-locale=\"en-AU\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag au\"></span>Australia </a>\n<a href=\"https://www.kayak.com.br/\"\ndata-href=\"https://www.kayak.com.br/in?cc=br&a=kayak&p=&url=/\"\ndata-locale=\"pt-BR\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag br\"></span>Brasil </a>\n<a href=\"https://www.ca.kayak.com/\"\ndata-href=\"https://www.ca.kayak.com/in?cc=ca&a=kayak&p=&url=/\"\ndata-locale=\"en-CA\"\ntabindex=\"-1\"\nclass=\"link\"> <span class=\"flag ca\"></span>Canada <span data-href=\"https://www.ca.kayak.com/in?cc=ca&a=kayak&p=&lc=en&url=/\" role=\"link\"\ndata-locale=\"en-CA\" aria-label=\"Canada EN\"\nclass=\"languageLink \" tabindex=\"0\">EN</span>\n<span data-href=\"https://www.ca.kayak.com/in?cc=ca&a=kayak&p=&lc=fr&url=/\" role=\"link\"\ndata-locale=\"fr-CA\" aria-label=\"Canada FR\"\nclass=\"languageLink \" tabindex=\"0\">FR</span>\n</a>\n<a href=\"https://www.kayak.cl/\"\ndata-href=\"https://www.kayak.cl/in?cc=cl&a=kayak&p=&url=/\"\ndata-locale=\"es-CL\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag cl\"></span>Chile </a>\n<a href=\"https://www.cn.kayak.com/\"\ndata-href=\"https://www.cn.kayak.com/in?cc=cn&a=kayak&p=&url=/\"\ndata-locale=\"zh-CN\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag cn\"></span>ä¸­å½ </a>\n<a href=\"https://www.kayak.com.co/\"\ndata-href=\"https://www.kayak.com.co/in?cc=co&a=kayak&p=&url=/\"\ndata-locale=\"es-CO\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag co\"></span>Colombia </a>\n<a href=\"https://www.kayak.dk/\"\ndata-href=\"https://www.kayak.dk/in?cc=dk&a=kayak&p=&url=/\"\ndata-locale=\"da-DK\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag dk\"></span>Danmark </a>\n<a href=\"https://www.kayak.de/\"\ndata-href=\"https://www.kayak.de/in?cc=de&a=kayak&p=&url=/\"\ndata-locale=\"de-DE\"\ntabindex=\"-1\"\nclass=\"link\"> <span class=\"flag de\"></span>Deutschland <span data-href=\"https://www.kayak.de/in?cc=de&a=kayak&p=&lc=de&url=/\" role=\"link\"\ndata-locale=\"de-DE\" aria-label=\"Deutschland DE\"\nclass=\"languageLink \" tabindex=\"0\">DE</span>\n<span data-href=\"https://www.kayak.de/in?cc=de&a=kayak&p=&lc=en&url=/\" role=\"link\"\ndata-locale=\"en-DE\" aria-label=\"Deutschland EN\"\nclass=\"languageLink \" tabindex=\"0\">EN</span>\n</a>\n<a href=\"https://www.kayak.es/\"\ndata-href=\"https://www.kayak.es/in?cc=es&a=kayak&p=&url=/\"\ndata-locale=\"es-ES\"\ntabindex=\"-1\"\nclass=\"link\"> <span class=\"flag es\"></span>EspaÃ±a <span data-href=\"https://www.kayak.es/in?cc=es&a=kayak&p=&lc=es&url=/\" role=\"link\"\ndata-locale=\"es-ES\" aria-label=\"EspaÃ±a ES\"\nclass=\"languageLink \" tabindex=\"0\">ES</span>\n<span data-href=\"https://www.kayak.cat/in?cc=es&a=kayak&p=&lc=ca&url=/\" role=\"link\"\ndata-locale=\"ca-ES\" aria-label=\"EspaÃ±a CA\"\nclass=\"languageLink \" tabindex=\"0\">CA</span>\n</a>\n<a href=\"https://www.kayak.fr/\"\ndata-href=\"https://www.kayak.fr/in?cc=fr&a=kayak&p=&url=/\"\ndata-locale=\"fr-FR\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag fr\"></span>France </a>\n<a href=\"https://www.gr.kayak.com/\"\ndata-href=\"https://www.gr.kayak.com/in?cc=gr&a=kayak&p=&url=/\"\ndata-locale=\"el-GR\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag gr\"></span>ÎÎ»Î»Î¬Î´Î± </a>\n<a href=\"https://www.kayak.com.hk/\"\ndata-href=\"https://www.kayak.com.hk/in?cc=hk&a=kayak&p=&url=/\"\ndata-locale=\"zh-HK\"\ntabindex=\"-1\"\nclass=\"link\"> <span class=\"flag hk\"></span>é¦æ¸¯ <span data-href=\"https://www.kayak.com.hk/in?cc=hk&a=kayak&p=&lc=en&url=/\" role=\"link\"\ndata-locale=\"en-HK\" aria-label=\"é¦æ¸¯ EN\"\nclass=\"languageLink \" tabindex=\"0\">EN</span>\n<span data-href=\"https://www.kayak.com.hk/in?cc=hk&a=kayak&p=&lc=zh&url=/\" role=\"link\"\ndata-locale=\"zh-HK\" aria-label=\"é¦æ¸¯ ä¸­æ\"\nclass=\"languageLink \" tabindex=\"0\">ä¸­æ</span>\n</a>\n</div>\n<div class=\"col col-1-3-m\">\n<a href=\"https://www.kayak.co.in/\"\ndata-href=\"https://www.kayak.co.in/in?cc=in&a=kayak&p=&url=/\"\ndata-locale=\"en-IN\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag in\"></span>India </a>\n<a href=\"https://www.kayak.co.id/\"\ndata-href=\"https://www.kayak.co.id/in?cc=id&a=kayak&p=&url=/\"\ndata-locale=\"in-ID\"\ntabindex=\"-1\"\nclass=\"link\"> <span class=\"flag id\"></span>Indonesia <span data-href=\"https://www.kayak.co.id/in?cc=id&a=kayak&p=&lc=in&url=/\" role=\"link\"\ndata-locale=\"in-ID\" aria-label=\"Indonesia ID\"\nclass=\"languageLink \" tabindex=\"0\">ID</span>\n<span data-href=\"https://www.kayak.co.id/in?cc=id&a=kayak&p=&lc=en&url=/\" role=\"link\"\ndata-locale=\"en-ID\" aria-label=\"Indonesia EN\"\nclass=\"languageLink \" tabindex=\"0\">EN</span>\n</a>\n<a href=\"https://www.kayak.ie/\"\ndata-href=\"https://www.kayak.ie/in?cc=ie&a=kayak&p=&url=/\"\ndata-locale=\"en-IE\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag ie\"></span>Ireland </a>\n<a href=\"https://www.kayak.it/\"\ndata-href=\"https://www.kayak.it/in?cc=it&a=kayak&p=&url=/\"\ndata-locale=\"it-IT\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag it\"></span>Italia </a>\n<a href=\"https://www.kayak.co.jp/\"\ndata-href=\"https://www.kayak.co.jp/in?cc=jp&a=kayak&p=&url=/\"\ndata-locale=\"ja-JP\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag jp\"></span>æ¥æ¬ </a>\n<a href=\"https://www.kayak.com.my/\"\ndata-href=\"https://www.kayak.com.my/in?cc=my&a=kayak&p=&url=/\"\ndata-locale=\"en-MY\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag my\"></span>Malaysia </a>\n<a href=\"https://www.kayak.com.mx/\"\ndata-href=\"https://www.kayak.com.mx/in?cc=mx&a=kayak&p=&url=/\"\ndata-locale=\"es-MX\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag mx\"></span>MÃ©xico </a>\n<a href=\"https://www.kayak.nl/\"\ndata-href=\"https://www.kayak.nl/in?cc=nl&a=kayak&p=&url=/\"\ndata-locale=\"nl-NL\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag nl\"></span>Nederland </a>\n<a href=\"https://www.nz.kayak.com/\"\ndata-href=\"https://www.nz.kayak.com/in?cc=nz&a=kayak&p=&url=/\"\ndata-locale=\"en-NZ\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag nz\"></span>New Zealand </a>\n<a href=\"https://www.kayak.no/\"\ndata-href=\"https://www.kayak.no/in?cc=no&a=kayak&p=&url=/\"\ndata-locale=\"no-NO\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag no\"></span>Norge </a>\n<a href=\"https://www.kayak.com.pe/\"\ndata-href=\"https://www.kayak.com.pe/in?cc=pe&a=kayak&p=&url=/\"\ndata-locale=\"es-PE\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag pe\"></span>PerÃº </a>\n<a href=\"https://www.kayak.pl/\"\ndata-href=\"https://www.kayak.pl/in?cc=pl&a=kayak&p=&url=/\"\ndata-locale=\"pl-PL\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag pl\"></span>Polska </a>\n<a href=\"https://www.kayak.pt/\"\ndata-href=\"https://www.kayak.pt/in?cc=pt&a=kayak&p=&url=/\"\ndata-locale=\"pt-PT\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag pt\"></span>Portugal </a>\n</div>\n<div class=\"col col-1-3-m\">\n<a href=\"https://www.kayak.ru/\"\ndata-href=\"https://www.kayak.ru/in?cc=ru&a=kayak&p=&url=/\"\ndata-locale=\"ru-RU\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag ru\"></span>Ð Ð¾ÑÑÐ¸Ñ </a>\n<a href=\"https://www.kayak.ch/\"\ndata-href=\"https://www.kayak.ch/in?cc=ch&a=kayak&p=&url=/\"\ndata-locale=\"de-CH\"\ntabindex=\"-1\"\nclass=\"link\"> <span class=\"flag ch\"></span>Schweiz <span data-href=\"https://www.kayak.ch/in?cc=ch&a=kayak&p=&lc=fr&url=/\" role=\"link\"\ndata-locale=\"fr-CH\" aria-label=\"Schweiz FR\"\nclass=\"languageLink \" tabindex=\"0\">FR</span>\n<span data-href=\"https://www.kayak.ch/in?cc=ch&a=kayak&p=&lc=de&url=/\" role=\"link\"\ndata-locale=\"de-CH\" aria-label=\"Schweiz DE\"\nclass=\"languageLink \" tabindex=\"0\">DE</span>\n</a>\n<a href=\"https://www.kayak.sg/\"\ndata-href=\"https://www.kayak.sg/in?cc=sg&a=kayak&p=&url=/\"\ndata-locale=\"en-SG\"\ntabindex=\"-1\"\nclass=\"link\"> <span class=\"flag sg\"></span>Singapore <span data-href=\"https://www.kayak.sg/in?cc=sg&a=kayak&p=&lc=en&url=/\" role=\"link\"\ndata-locale=\"en-SG\" aria-label=\"Singapore EN\"\nclass=\"languageLink \" tabindex=\"0\">EN</span>\n<span data-href=\"https://www.kayak.sg/in?cc=sg&a=kayak&p=&lc=zh&url=/\" role=\"link\"\ndata-locale=\"zh-SG\" aria-label=\"Singapore ä¸­æ\"\nclass=\"languageLink \" tabindex=\"0\">ä¸­æ</span>\n</a>\n<a href=\"https://www.kayak.co.kr/\"\ndata-href=\"https://www.kayak.co.kr/in?cc=kr&a=kayak&p=&url=/\"\ndata-locale=\"ko-KR\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag kr\"></span>ëíë¯¼êµ­ </a>\n<a href=\"https://www.fi.kayak.com/\"\ndata-href=\"https://www.fi.kayak.com/in?cc=fi&a=kayak&p=&url=/\"\ndata-locale=\"fi-FI\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag fi\"></span>Suomi </a>\n<a href=\"https://www.kayak.se/\"\ndata-href=\"https://www.kayak.se/in?cc=se&a=kayak&p=&url=/\"\ndata-locale=\"sv-SE\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag se\"></span>Sverige </a>\n<a href=\"https://www.tw.kayak.com/\"\ndata-href=\"https://www.tw.kayak.com/in?cc=tw&a=kayak&p=&url=/\"\ndata-locale=\"zh-TW\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag tw\"></span>å°ç£ </a>\n<a href=\"https://www.kayak.com.tr/\"\ndata-href=\"https://www.kayak.com.tr/in?cc=tr&a=kayak&p=&url=/\"\ndata-locale=\"tr-TR\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag tr\"></span>TÃ¼rkiye </a>\n<a href=\"https://www.kayak.ae/\"\ndata-href=\"https://www.kayak.ae/in?cc=ae&a=kayak&p=&url=/\"\ndata-locale=\"en-AE\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag ae\"></span>United Arab Emirates </a>\n<a href=\"https://www.kayak.co.uk/\"\ndata-href=\"https://www.kayak.co.uk/in?cc=gb&a=kayak&p=&url=/\"\ndata-locale=\"en-GB\"\ntabindex=\"0\"\nclass=\"link\"> <span class=\"flag gb\"></span>United Kingdom </a>\n<a href=\"https://www.kayak.com/\"\ndata-href=\"https://www.kayak.com/in?cc=us&a=kayak&p=&url=/\"\ndata-locale=\"en-US\"\ntabindex=\"-1\"\nclass=\"link active\"> <span class=\"flag us\"></span>United States <span data-href=\"https://www.kayak.com/in?cc=us&a=kayak&p=&lc=en&url=/\" role=\"link\"\ndata-locale=\"en-us\" aria-label=\"United States EN\"\nclass=\"languageLink active\" tabindex=\"0\">EN</span>\n<span data-href=\"https://www.es.kayak.com/in?cc=uy&a=kayak&p=&lc=es&url=/\" role=\"link\"\ndata-locale=\"es-uy\" aria-label=\"United States ES\"\nclass=\"languageLink \" tabindex=\"0\">ES</span>\n</a>\n<a href=\"https://www.kayak.co.th/\"\ndata-href=\"https://www.kayak.co.th/in?cc=th&a=kayak&p=&url=/\"\ndata-locale=\"th-TH\"\ntabindex=\"-1\"\nclass=\"link\"> <span class=\"flag th\"></span>à¸à¸£à¸°à¹à¸à¸¨à¹à¸à¸¢ <span data-href=\"https://www.kayak.co.th/in?cc=th&a=kayak&p=&lc=th&url=/\" role=\"link\"\ndata-locale=\"th-TH\" aria-label=\"à¸à¸£à¸°à¹à¸à¸¨à¹à¸à¸¢ TH\"\nclass=\"languageLink \" tabindex=\"0\">TH</span>\n<span data-href=\"https://www.kayak.co.th/in?cc=th&a=kayak&p=&lc=en&url=/\" role=\"link\"\ndata-locale=\"en-TH\" aria-label=\"à¸à¸£à¸°à¹à¸à¸¨à¹à¸à¸¢ EN\"\nclass=\"languageLink \" tabindex=\"0\">EN</span>\n</a>\n</div>\n</div>\n<div class=\"tip\"></div>\n</div>\n</div>\n<div class=\"Common-Layout-CurrencyPicker theme-dark\">\n<a id=\"VatC-dropdown\" href=\"javascript:void(0)\"\naria-controls=\"VatC-dropdown_content\"\naria-owns=\"VatC-dropdown_content\"\nrole=\"button\"\naria-pressed=\"false\" aria-label=\"Select your currency. Current currency: USD\" aria-haspopup=\"true\"\naria-expanded=\"false\"\ndata-alignment=\"right\"\ndata-expandto=\"\"\nclass=\"Common-Widgets-Dropdown-DropdownDialog theme-dark Common-Layout-CurrencyPicker-Trigger DropDown select size-m\"\n>\n<div class=\"label\"\n>\n</div>\n<div class=\"placeholder\">\n<span\nclass='symbol'>$</span><span class='code'>USD</span> </div>\n<div class=\"icon\">\n<svg class=\"\" viewBox=\"0 0 8 5\" xmlns=\"http://www.w3.org/2000/svg\" stroke-linejoin=\"round\" stroke-linecap=\"round\" stroke-width=\"1.35\"><path d=\"M7 1.053L4.027 4 1 1\" stroke=\"currentColor\" fill=\"none\"/></svg>\n</div>\n</a>\n<div id=\"VatC-dropdown_content\"\nclass=\"Common-Widgets-Dropdown-DropdownDialog-Content Common-Layout-CurrencyPicker-Content R9-Overlay animate-bottom-right\"\naria-expanded=\"false\"\ndata-dropdown-owner=\"\"\nrole=\"dialog\">\n<div id=\"VatC\" class=\"Common-Layout-CurrencyPicker theme-dark \">\n<div class=\"keel-grid currency-grid\">\n<div class=\"col-1\">\n<div class=\"currency-tooltip-header\">Top Currencies</div>\n<div class=\"currency-tooltip-column\">\n<a class=\"currency-tooltip-item currency-tooltip-active\"\ndata-cur=\"USD\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">$</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">United States Dollars</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"EUR\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&euro;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Euro</div>\n<div class=\"clearfix\"></div>\n</a>\n</div>\n<div class=\"currency-tooltip-column\">\n<a class=\"currency-tooltip-item \"\ndata-cur=\"CAD\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">C$</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Canadian Dollars</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"GBP\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&pound;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Pound sterling</div>\n<div class=\"clearfix\"></div>\n</a>\n</div>\n<div class=\"currency-tooltip-column\">\n<a class=\"currency-tooltip-item \"\ndata-cur=\"AUD\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">$</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Australian Dollars</div>\n<div class=\"clearfix\"></div>\n</a>\n</div>\n<div class=\"clearfix\"></div>\n<div class=\"currency-tooltip-header\">All Currencies</div>\n<div class=\"currency-tooltip-column\">\n<a class=\"currency-tooltip-item \"\ndata-cur=\"ARS\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">$</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Argentinian Pesos</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"AUD\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">$</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Australian Dollars</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"BDT\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">Tk</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Bangladesh Taka</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"BRL\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">R$</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Brazilian reais</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"CAD\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">C$</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Canadian Dollars</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"CLP\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">$</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Chilean Pesos</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"CNY\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&yen;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Chinese Yuan Renminbi</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"COP\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">$</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Colombian Pesos</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"CZK\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">K&#269;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Czech Koruna</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"DKK\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">kr</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Danish Kroner</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"EGP\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&pound;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Egyptian Pounds</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"EUR\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&euro;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Euro</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"FJD\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">$</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Fijian Dollars</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"HKD\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">HK$</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Hong Kong Dollars</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"HUF\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">Ft</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Hungarian Forint</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"ISK\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">kr</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Icelandic Krona</div>\n<div class=\"clearfix\"></div>\n</a>\n</div>\n<div class=\"currency-tooltip-column\">\n<a class=\"currency-tooltip-item \"\ndata-cur=\"INR\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&#8377;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">India Rupees</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"IDR\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">Rp</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Indonesian Rupiah</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"ILS\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&#8362;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Israeli New Shekels</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"JMD\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">$</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Jamaican Dollars</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"JPY\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&yen;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Japanese Yen</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"KWD\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&#1583;.&#1603;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Kuwaiti Dinar</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"MYR\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">RM</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Malaysian Ringgit</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"MXN\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">$</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Mexican Pesos</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"TWD\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">NT$</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">New Taiwan Dollars</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"NZD\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">$</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">New Zealand Dollars</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"NOK\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">kr</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Norwegian Kroner</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"OMR\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&#65020;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Oman Rials</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"PKR\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&#8360;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Pakistani Rupees</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"PEN\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">S/</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Peru Soles</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"PHP\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&#8369;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Philippines Pesos</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"PLN\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">z&#322;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Polish Zloty</div>\n<div class=\"clearfix\"></div>\n</a>\n</div>\n<div class=\"currency-tooltip-column\">\n<a class=\"currency-tooltip-item \"\ndata-cur=\"GBP\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&pound;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Pound sterling</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"QAR\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&#65020;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Qatari Riyals</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"RON\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">lei</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Romanian New Leu</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"RUB\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&#1088;.</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Russian Rubles</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"SAR\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&#65020;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Saudi Arabian Riyals</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"SGD\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">S$</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Singapore Dollars</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"ZAR\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">R</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">South African Rand</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"KRW\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&#8361;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">South Korean Won</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"SEK\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">kr</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Swedish Kronor</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"CHF\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">SFr.</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Swiss Franc</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"TZS\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">TSh</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Tanzanian Shilling</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"THB\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&#3647;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Thai Baht</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"TRY\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&#8378;</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Turkish Lira</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"AED\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">AED</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">UAE Dirhams</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item \"\ndata-cur=\"UAH\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">&#1075;&#1088;&#1085;.</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">Ukrainian Hryvnia</div>\n<div class=\"clearfix\"></div>\n</a>\n<a class=\"currency-tooltip-item currency-tooltip-active\"\ndata-cur=\"USD\" tabindex=\"0\">\n<div class=\"floatLeft currency-tooltip-symbol\">$</div>\n<div class=\"floatLeft currency-tooltip-currencyname\">United States Dollars</div>\n<div class=\"clearfix\"></div>\n</a>\n</div>\n<div class=\"clearfix\"></div>\n</div>\n</div>\n<div class=\"tip\"></div>\n</div>\n</div>\n</div>\n</div>\n",
+    "bufferedScripts" : [
+        "new R9.common.widgets.dropdown.DropdownDialog(\"unkt-countryPicker-dropdown\", {\"theme\":\"DARK\",\"phoenixRising\":false,\"loadWithAjaxOnInit\":false,\"ajaxUrl\":\"\",\"ajaxData\":{},\"placeholder\":\"<span class='flag us'>&nbsp;</span>United States\",\"value\":\"\",\"isPopover\":false,\"showIcon\":true,\"autoOpen\":false,\"alignment\":\"right\",\"direction\":\"up\",\"container\":null,\"triggerClass\":\"\",\"removeZIndex\":true,\"flippable\":false,\"topOffset\":0,\"leftOffset\":0,\"matchWidth\":false,\"isFixedWidth\":false,\"forceTriggerWidth\":false,\"expandTo\":null,\"subValue\":\"\",\"subPlaceholder\":\"\",\"subValueAfterIcon\":\"\",\"animateClose\":false,\"hasSubValue\":false,\"hasSubValueAfterIcon\":false,\"hasSubPlaceholder\":false,\"useCover\":false});new R9.common.layout.CountryPicker(\"unkt-countryPicker\", { currentLocale: \"en-US\", baseUrl: \"https://www.kayak.com/\"}, {\"theme\":\"DARK\",\"phoenixRising\":false});new R9.common.widgets.dropdown.DropdownDialog(\"VatC-dropdown\", {\"theme\":\"DARK\",\"phoenixRising\":false,\"loadWithAjaxOnInit\":false,\"ajaxUrl\":\"\",\"ajaxData\":{},\"placeholder\":\" <span\\n                class='symbol'>$</span><span class='code'>USD</span> \",\"value\":\"\",\"isPopover\":false,\"showIcon\":true,\"autoOpen\":false,\"alignment\":\"right\",\"direction\":\"up\",\"container\":null,\"triggerClass\":\"\",\"removeZIndex\":true,\"flippable\":false,\"topOffset\":0,\"leftOffset\":0,\"matchWidth\":false,\"isFixedWidth\":false,\"forceTriggerWidth\":false,\"expandTo\":null,\"subValue\":\"\",\"subPlaceholder\":\"\",\"subValueAfterIcon\":\"\",\"animateClose\":false,\"hasSubValue\":false,\"hasSubValueAfterIcon\":false,\"hasSubPlaceholder\":false,\"useCover\":false});new R9.common.widgets.dialog.Dialog(\"VatC-dialog\", {\"theme\":\"DEFAULT\",\"phoenixRising\":false,\"openImmediately\":false,\"preventClose\":false,\"renderInline\":false,\"preventInitialFocus\":false,\"initialFocusId\":null,\"fullHeight\":false,\"customWidth\":false,\"isMobile\":false});new R9.common.layout.CurrencyPicker(\"VatC\", { \"isLoggedIn\" : false, \"anonymousOnly\" : false });"
+    ],
+    "bufferedHTML" : [
+                    "        <div id=\"VatC-dialog\"\n     class=\"Common-Widgets-Dialog-Dialog R9-Overlay  Common-Layout-CurrencyPicker-Dialog fromTop\"\n     role=\"dialog\"\n     tabindex=\"-1\"\n     data-dialog-owner=\"VatC\"\n      aria-modal=\"true\"                    >\n    <div id=\"VatC-dialog-focusStartBoundary\" class=\"last-focusable off-screen\" tabindex=\"0\"></div>\n            <div id=\"VatC-dialog-modal\" class=\"modalBackground\"></div>\n            <div id=\"VatC-dialog-viewport\" class=\"viewport\">\n            <div id=\"VatC-dialog-content\" class=\"content\"\n                        >\n                                        <a id=\"VatC-dialog-close\" href=\"javascript:void(0)\" class=\"close \" aria-label=\"Close\">        \n<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 9.85 9.93\" class=\"x-icon-x \"><use xlink:href=\"#common-icon-x-icon\"/></svg>\n</a>\n                        <div id=\"VatC-dialog-body\" class=\"body\">\n                        <div class=\"clearfix\">\n    <div class=\"currency-message\">\n        Would you like to save <span class='currency_holder'></span> as your currency permanently or for this visit only?    </div>\n    <div class=\"currency-button\">\n                        \n\n    <button\n        id=\"Y5FA\"\n        class=\"Common-Widgets-Button-ButtonDeprecated Common-Widgets-Button-Button  size-m saveToProfile\"\n        type=\"button\"\n                                                              >\n                    <span class=\"\">Sign up to make permanent</span>\n            </button>\n                    \n\n    <button\n        id=\"OxDE\"\n        class=\"Common-Widgets-Button-ButtonDeprecated Common-Widgets-Button-Button  size-m visitOnly\"\n        type=\"button\"\n                                                              >\n                    <span class=\"\">This visit only</span>\n            </button>\n    </div>\n</div>\n\n    \n            </div>\n                    </div>\n                </div>\n        <div id=\"VatC-dialog-focusEndBoundary\" class=\"last-focusable off-screen\" tabindex=\"0\"></div>\n</div>\n    "            ],
+    "bufferedSVGs": [
+                    "<symbol id=\"common-icon-x-icon\"  xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 9.85 9.93\" class=\"x-icon-x\">\n    <path style=\"fill:none;stroke:currentColor;stroke-miterlimit:10\" d=\"M.71.79l8.43 8.43M9.14.71L.71 9.14\"/>\n</symbol>\n"            ],
+    "clientTemplates": [
+            ],
+    "react": null,
+    
+"styles" : [
+    "https://a1.r9cdn.net/res/css/horizon/combined-2.css?v=f51fa64dfd4011aa4582cd6793778f2457f9f801"]
+,
+"stylesMetadata" : "84g1E="    ,
+    
+"scripts" : [
+    "https://a1.r9cdn.net/res/js/horizon/combined-4.js?v=16d494900e2935389f76dcbeef4c41464e63efe5"]
+,
+"scriptsMetadata" : "36Bg80Q28B"        ,
+    "globals" : {"formtoken":"v1WnEKxQBbVyLIcsGSUutkYYto3J2ZW2KR5b5lhyr_c-hpumC4oNpaOjz15GO_q9a5FdZPonpC2kF4CBYjEPh14"}    }
+
+#########################
+
+**returns some javascript function**
+
+
+Request:
+GET /gtm/ HTTP/1.1
+Host: www.kayak.com
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:57.0) Gecko/20100101 Firefox/57.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Referer: https://www.kayak.com/
+Cookie: Apache=SNpQeQ-AAABYJT9eXY-8b-GdwXGQ; kykprf=250; kayak=QEByJLrAVOOfJ2928pIS; cluster=4; p1.med.sid=H-4_XxXdbshGS3OvTVYuMHV-7TlaRxXeQC9VazD_VUvoK7gHtBVJuRoul7qObbygb; p1.med.token=SyEYWuPyozoern$sk3XLAc; NSC_q4-tqbslmf=ffffffff094f2a1645525d5f4f58455e445a4a422a59
+Connection: close
+Upgrade-Insecure-Requests: 1
+
+Response:
+
+HTTP/1.1 200 OK
+Server: Apache
+Cache-Control: max-age=0, no-store, no-cache, must-revalidate
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+Via: 1.1 varnish
+Fastly-Debug-Digest: b64c0e11fc61541c51ab3ac8a5da4c095e86a7aa86834b7e61de3e276ede1be9
+Content-Length: 1293
+Accept-Ranges: bytes
+Date: Tue, 26 Dec 2017 23:05:34 GMT
+Via: 1.1 varnish
+Age: 2452
+Connection: close
+X-Served-By: cache-jfk8136-JFK, cache-iad2149-IAD
+X-Cache: HIT, HIT
+X-Cache-Hits: 1, 1
+X-Timer: S1514329534.452902,VS0,VE1
+Vary: Fastly-SSL,X-KAYAK-Presentation,Accept-Encoding
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T654MX"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<script type="text/javascript">
+    function isIframe() {
+        try {
+            return window.self !== window.top;
+        } catch (e) {
+            return true;
+        }
+    }
+
+    if (isIframe()) {
+        var parentDoc = window.parent.document;
+
+        Object.defineProperty(document, "referrer", {
+            get: function () {
+                return parentDoc.referrer;
+            }
+        });
+        if (window.history && window.history.replaceState) {
+            window.history.replaceState("", parentDoc.title, parentDoc.location.href);
+        }
+        document.title = parentDoc.title;
+    }
+
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T654MX');</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+Intial requst: GET; following cookies are set
+
+Apache=SNpQeQ-AAABYJRMlRk-8b-ARPQOA  [*expires 2020*]
+kayak=wSX46Khhvx4x2oAo_Ins [*expires 2020*]
+cluster=4 [*this cookie expires 45 minutes after current time*]
+
+kykprf cookie values: 
+
+251 389 27 162 355 61 206 284 134 311 157 368 249 197 191 109 140 263 255 250 80 259 63 167 134 165 398 127 41 115 74 256 162 218 142 5 188 164 68
+
+ p1.med.sid=
+
+ H-4HQwHILmVHL3GMLcERDhg-Wz7RBDmf9uFXOZy72kfR3jIqozuifTurlD4nuPObD
+ H-4kVI230BvLXUkP7DlzWr0-zJ4Y2YuN9jEIVEDZFNYZ7_9PEC2xGCGaMus5DfeZE
+ H-4EDTrA2lrxuLsgJFFhDvR-Z19MZ72QgcRiuiGr_t6o_ATR_cIDQGb4LG8qGm_k
+ H-4p4nlUjcvFwZNsJ9iYXmY-MWnQeX_iqcuJnnCwmmhCGH4qj_JY0lNAUR1wnvr8U
+
+ p1.med.token=  [*this cookie expires 6 months from current time*]
+ 1 --
+ 2 --
+ 3 --
+ Auia6_Lj$yb_9cNsqt3aIH
+ ngij4MhxT08Vyw7tUHYC4P
+
+ NSC_q4-tqbslmf= [*this cookie expires 20 minutes from current time*]
+ ffffffff094f2a0145525d5f4f58455e445a4a422a59
+ ffffffff094f2a1045525d5f4f58455e445a4a422a59
+ ffffffff094f2a0945525d5f4f58455e445a4a422a59
+ ffffffff094f2a1f45525d5f4f58455e445a4a422a59
+
+ ---------------------------------------------------------------
+ the following cookies are set after executing the below request. no set-cookie values returned, yet two cookies are set
+
+ POST /s/horizon/flights/results/FlightResultsPage HTTP/1.1
+
+_ga=GA1.2.529514874.1514498539; _gid=GA1.2.795322344.1514498539
+
+ ---------------------------------------------------------------
+ on submitting flight form:
+  _gat=1;
+ __lc.visitor_id.8484107=S1514499511.8180712d20;
+
+
+POST /k/cookie HTTP/1.1
+
+NSC_q4-lbqj=ffffffff094fbe0e45525d5f4f58455e445a4a42299c;
+
+hiddenParamsWAS-LIM%2F2017-12-29%2F2018-01-31=page_origin%3DF..FD..M0%26src%3D%26searchingagain%3D%26c2s%3D%26po%3D%26personality%3D%26provider%3D%26id%3DiHsW; 
+
+compareTos=%7B%22c2s%22%3A%221031497%7C7%7C1%3B5194424%7C6%7C1%3B9927065%7C6%7C2%3B9928226%7C6%7C3%3B5146042%7C6%7C4%3B9931540%7C3%7C2%3B9931659%7C3%7C3%3B9927960%7C2%7C5%3B7448479%7C2%7C6%3B9931653%7C2%7C7%3B9924011%7C2%7C8%3B9930960%7C2%7C9%22%2C%22origin%22%3A%22F..FD..M0%22%2C%22src%22%3A%22%22%2C%22where%22%3A%22fd%22%2C%22token%22%3A%22viAiDKvFqB%22%7D
