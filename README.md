@@ -1,4 +1,4 @@
-webscraper for Kayak that bypasses Kayak's bot filters. Change the following variables at the top of the (scraper.py || scrape.ipynp) file as desired. Here is an example: 
+webscraper for Kayak that bypasses Kayak's bot filters. Change the following variables at the top of the (scrape.py || scraper.ipynb) file as desired. Here is an example: 
 
 * origin_code = 'WAS'
 * origin_location = 'WASHINGTON'
